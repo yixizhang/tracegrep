@@ -1,18 +1,15 @@
 # TraceGrep
--
 
 This is a simple utils to grep Python tracebacks from plain text.
 
 
 # Install
--
 
 ```
 pip install tracegrep
 ```
 
-# Use
--
+# Usage
 
 ```python
 from tracegrep import tracegrep
