@@ -53,10 +53,9 @@ class TraceGrepTestSuite(unittest.TestCase):
         self.assertEqual(len(traces), 2)
         ta, tb = traces
         _, tae = ta
-        self.assertEqual(tae, "sre_constants.error")
+        self.assertEqual(tae, "sre_constants.error: multiple repeat")
         _, tbe = tb
-        self.assertEqual(tbe, "ZeroDivisionError")
-
+        self.assertEqual(tbe, "ZeroDivisionError: integer division or modulo by zero")
 
 if __name__ == '__main__':
     unittest.main()

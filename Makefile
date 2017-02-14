@@ -7,6 +7,7 @@ venv/bin/activate:
 
 .PHONY: build
 build: venv
+	rm -rf dist build tracegrep.egg-info
 	python setup.py sdist
 	python setup.py bdist_wheel
 	. venv/bin/activate; twine upload dist/*

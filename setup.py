@@ -9,7 +9,7 @@ with open('LICENSE') as f:
 
 setup(
     name='tracegrep',
-    version='0.1.0',
+    version='0.1.1',
     description='Grep to parse Python traceback from plain text',
     long_description=readme,
     author='Yixi Zhang',

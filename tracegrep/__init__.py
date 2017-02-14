@@ -6,14 +6,12 @@ except ImportError:
     import StringIO
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 
 def _get_trace_and_errortype(tracestack):
-    last_line = tracestack[-1]
-    errortype_end_idx = last_line.find(":")
-    errortype = last_line[:errortype_end_idx]
-    return ("\n".join(tracestack), errortype)
+    error = tracestack[-1].strip()
+    return ("\n".join(tracestack), error)
 
 
 def grep(txt):
